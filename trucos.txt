@@ -1,5 +1,6 @@
 ﻿Apagar PC
 sudo shutdown -h now
+sudo shutdow -h 00
 
 Despues de un tiempo
 
