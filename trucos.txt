@@ -45,6 +45,10 @@ Crear un alias
 Vamos a la consola y tecleamos 
 sudo gedit ~/.bashrc
 
+Si estamos usando la nueva version de kali entonces seria:
+
+nano .zshrc
+
 – Una vez abierto, buscamos la zona donde escribir el alias, 
 normalmente al final del archivo
 
