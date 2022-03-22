@@ -11,6 +11,10 @@ Agregar archivos al repo
 
     git add archivo.txt
 
+
+Quitar archivo del stage  
+    git restore --staged archivo.txt
+
     git commit -m "agrego Quitar limite de Mega"
     
 Agregamos la direccion del repositorio
@@ -20,8 +24,11 @@ ejemplo:
 
     git add remote origin https://github.com/VEGATRONICA/TrucosLinux.git
     
-Subimos los archivos al repo
+Subimos los archivos al repo, sino esta creado
+el branch lo hacemos asi
     git push -u main
 
-Quitar archivo del stage  
-    git restore --staged archivo.txt
+si ya lo tenemos creado solo basta poner:
+    git push origin main
+
+
