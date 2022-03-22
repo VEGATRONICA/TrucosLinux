@@ -1,0 +1,27 @@
+Comandos Basicos de Git
+
+Iniciar Git
+
+    git init
+    
+Ver estados de los archivos
+    git status -s
+
+Agregar archivos al repo
+
+    git add archivo.txt
+
+    git commit -m "agrego Quitar limite de Mega"
+    
+Agregamos la direccion del repositorio
+esto solo hay que hacerlo una vez ya que
+se quedara guardado en la carpeta de nuestro proyecto
+ejemplo:
+
+    git add remote origin https://github.com/VEGATRONICA/TrucosLinux.git
+    
+Subimos los archivos al repo
+    git push -u main
+
+Quitar archivo del stage  
+    git restore --staged archivo.txt
