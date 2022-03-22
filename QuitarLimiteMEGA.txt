@@ -1,0 +1,42 @@
+  Quitar limite de MEGA en Linux
+  Necesitaremos el programa Megabasterd que se ejecuta en Java
+  que se puede descargar desde aqui:
+  
+  https://github.com/tonikelope/megabasterd
+  
+y posteriormente instalaremos las siguientes herramientas
+     sudo apt-get install tor
+     sudo apt-get install privoxy
+     
+Despues editaremos el archivo de configuracion
+     sudo gedit /etc/privoxy/config/
+     
+     En la ultima linea del documento agregamos lo siguiente tal cual
+     
+     forward-socks4a / localhost:9050 .
+
+En Megabasterd ya solo basta colocar la siguiente config
+
+     Proxy HTTP: 127.0.0.1
+     Puerto: 8118
+     
+Ya solo se tiene que iniciar los servicios
+
+     sudo /etc/init.d/tor start
+     sudo /etc/init.d/privoxy start
+     
+Tambien podria ser:
+     sudo systemctl start tor
+     sudo systemctl start privoxy
+
+Para Cambiar la IP solo basta detener los servicios e iniciarlos nuevamente
+se podria crear un script para realizar esto mas rapido
+
+     sudo /etc/init.d/tor stop
+     sudo /etc/init.d/privoxy stop
+     sudo /etc/init.d/tor start
+     sudo /etc/init.d/privoxy start
+     
+Disfruten!
+
+     
