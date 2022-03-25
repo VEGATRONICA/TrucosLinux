@@ -29,6 +29,7 @@ el branch lo hacemos asi
     git push -u main
 
 si ya lo tenemos creado solo basta poner:
-    git push origin main
+    git push origin main o master
+    
 
 
